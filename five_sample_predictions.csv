@@ -1,0 +1,6 @@
+Student_ID,Attendance_Rate,Quiz_Average,Assignment_Average,Absences,Late_Submissions,Study_Hours,Previous_GPA,Predicted_Status,Estimated_At_Risk_Probability
+NEW1,50,45,50,12,6,3,3.8,At Risk,1.0
+NEW2,95,90,92,1,0,20,1.8,Satisfactory,0.0
+NEW3,65,60,62,8,4,6,3.2,At Risk,0.71
+NEW4,88,82,85,2,1,15,2.2,Satisfactory,0.01
+NEW5,72,70,68,5,3,10,2.8,Satisfactory,0.19

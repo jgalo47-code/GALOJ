@@ -1,0 +1,103 @@
+{
+  "model_name": "Random Forest (100 trees, class_weight=balanced)",
+  "model_version": "1.0.0-midterm-rf",
+  "trained_at_utc": "2026-10-26T00:24:29+00:00",
+  "sklearn_version": "1.9.1",
+  "target": "Academic_Status",
+  "features": [
+    "Attendance_Rate",
+    "Quiz_Average",
+    "Assignment_Average",
+    "Absences",
+    "Late_Submissions",
+    "Study_Hours",
+    "Previous_GPA",
+    "Engagement_Score",
+    "Submission_Burden"
+  ],
+  "classes": [
+    "At Risk",
+    "Satisfactory"
+  ],
+  "n_rows_after_cleaning": 300,
+  "n_train": 240,
+  "n_test": 60,
+  "metrics": {
+    "Decision Tree": {
+      "Accuracy": 0.8,
+      "Precision (At Risk)": 0.7727272727272727,
+      "Recall (At Risk)": 0.7083333333333334,
+      "F1 (At Risk)": 0.7391304347826086
+    },
+    "Random Forest": {
+      "Accuracy": 0.8333333333333334,
+      "Precision (At Risk)": 0.85,
+      "Recall (At Risk)": 0.7083333333333334,
+      "F1 (At Risk)": 0.7727272727272727
+    }
+  },
+  "confusion_matrices": {
+    "Decision Tree": [
+      [
+        17,
+        7
+      ],
+      [
+        5,
+        31
+      ]
+    ],
+    "Random Forest": [
+      [
+        17,
+        7
+      ],
+      [
+        3,
+        33
+      ]
+    ]
+  },
+  "confusion_labels": [
+    "At Risk",
+    "Satisfactory"
+  ],
+  "feature_importance": [
+    {
+      "Feature": "Previous_GPA",
+      "Importance": 0.24841561071899812
+    },
+    {
+      "Feature": "Engagement_Score",
+      "Importance": 0.190387946973999
+    },
+    {
+      "Feature": "Submission_Burden",
+      "Importance": 0.15736753926426694
+    },
+    {
+      "Feature": "Absences",
+      "Importance": 0.0850500588435816
+    },
+    {
+      "Feature": "Attendance_Rate",
+      "Importance": 0.08183228469692908
+    },
+    {
+      "Feature": "Study_Hours",
+      "Importance": 0.07941587989463224
+    },
+    {
+      "Feature": "Quiz_Average",
+      "Importance": 0.06935442527115912
+    },
+    {
+      "Feature": "Assignment_Average",
+      "Importance": 0.053618978801504714
+    },
+    {
+      "Feature": "Late_Submissions",
+      "Importance": 0.03455727553492917
+    }
+  ]
+}
